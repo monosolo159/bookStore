@@ -4,9 +4,6 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
-/**
- * Created by NUI on 30/5/2559.
- */
 public class DbSQLite {
     private DbOpenHelper dbOpenHelper;
     private SQLiteDatabase sqLiteDatabase;

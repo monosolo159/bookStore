@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        listView = (ListView) findViewById(R.id.listView);
 
         listView = (ListView) findViewById(R.id.listView);
 
@@ -75,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     public void  clickMainToDel(View view){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        builder.setMessage("ต้องการลบคำถามนี้ใช่หรือไม่ ?").setPositiveButton("ใช่",  new DialogInterface.OnClickListener() {
+        builder.setMessage("ต้องการลบใช่หรือไม่ ?").setPositiveButton("ใช่",  new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
                 SQLiteDatabase sqLiteDatabase = openOrCreateDatabase(DbOpenHelper.database_name,MODE_PRIVATE,null);

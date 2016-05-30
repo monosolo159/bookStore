@@ -4,9 +4,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 
-/**
- * Created by NUI on 30/5/2559.
- */
 public class MyAlert {
     public void myDialog(Context context, String strTitle, String strMessage){
         AlertDialog.Builder builder = new AlertDialog.Builder(context);

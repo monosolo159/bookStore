@@ -4,9 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- * Created by NUI on 30/5/2559.
- */
+
 public class DbOpenHelper extends SQLiteOpenHelper {
     public static final String database_name = "BookStock.db";
     private static final int database_version = 1;

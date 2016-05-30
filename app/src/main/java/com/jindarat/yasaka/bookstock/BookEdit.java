@@ -48,7 +48,7 @@ public class BookEdit extends AppCompatActivity {
         }else{
 
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage("ต้องการแก้ไขคำถามนี้ใช่หรือไม่ ?").setPositiveButton("ใช่",  new DialogInterface.OnClickListener() {
+            builder.setMessage("ต้องการแก้ไขใช่หรือไม่ ?").setPositiveButton("ใช่",  new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int id) {
                     SQLiteDatabase sqLiteDatabase = openOrCreateDatabase(DbOpenHelper.database_name,MODE_PRIVATE,null);
