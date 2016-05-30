@@ -25,10 +25,6 @@ public class BookAdd extends AppCompatActivity {
         startActivity(new Intent(BookAdd.this,MainActivity.class));
     }
 
-    public void  clickBookAddReset(View view){
-
-    }
-
     public void clickBookAddToDB(View view){
 
         strName = edtName.getText().toString().trim();
@@ -40,7 +36,7 @@ public class BookAdd extends AppCompatActivity {
         }else{
             dbSQLite = new DbSQLite(this);
             dbSQLite.addNewQuestion(strName,strDetail);
-            myAlert.myDialog(this,"สถานะบันทึกข้อมูล","บันทึกข้อมูลสำเร็จ");
+            //myAlert.myDialog(this,"สถานะบันทึกข้อมูล","บันทึกข้อมูลสำเร็จ");
             editextNull();
         }
         startActivity(new Intent(BookAdd.this,MainActivity.class));
@@ -56,7 +52,7 @@ public class BookAdd extends AppCompatActivity {
         return strName.equals("") || strDetail.equals("");
     }
 
-    public void cilckBookAddReset(View view){
+    public void clickBookAddReset(View view){
         editextNull();
     }
 

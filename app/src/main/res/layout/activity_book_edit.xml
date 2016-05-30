@@ -25,6 +25,30 @@
             android:background="#000000"
             android:textColor="#ffffff"
             android:gravity="center_vertical|center_horizontal" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtEditBookName"
+                android:hint="ชื่อหนังสือ" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:id="@+id/edtEditBookDetail"
+                android:hint="รายละเอียดหนังสือ" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -46,7 +70,8 @@
             android:layout_height="wrap_content"
             android:text="แก้ไข"
             android:id="@+id/btnEdit"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:onClick="cilckBookUpdate" />
 
         <Button
             android:layout_width="match_parent"

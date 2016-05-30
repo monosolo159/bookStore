@@ -13,8 +13,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#96ffffff">
+        android:layout_height="480sp"
+        android:background="#c8ffffff">
 
         <TextView
             android:layout_width="match_parent"
@@ -26,16 +26,14 @@
             android:textColor="#ffffff"
             android:gravity="center_vertical|center_horizontal" />
 
-        <ScrollView
+        <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/scrollView" >
+            android:id="@+id/listView"
 
-            <ListView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/listView" />
-        </ScrollView>
+            android:scrollingCache="false"
+            android:smoothScrollbar="false"
+            android:stackFromBottom="false" />
 
     </LinearLayout>
 
