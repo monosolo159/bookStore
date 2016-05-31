@@ -11,7 +11,7 @@ import android.widget.EditText;
 
 public class BookEdit extends AppCompatActivity {
     private EditText eBook, eDetail;
-    private String strBook, strDetail;
+    private String strBook, strDetail;//aa
 
     private DbSQLite dbSQLite;
     private MyAlert myAlert = new MyAlert();
